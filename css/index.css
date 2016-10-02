@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    -webkit-user-select: none;
+    border: 0;
+}
+
+p {
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    width: 520px;
+    margin: 20px auto;
+    padding-top: 0;
+    text-align: center;
+}
+
+.change>a {
+    font-size: 20px;
+    padding: 5px;
+    border: 4px solid #d6e9c6;
+    border-radius: 15px;
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.change>a:hover {
+    cursor: pointer;
+    border-color: #ebccd1;
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+#gameOver {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#gameOver > div {
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background-color: #555;
+}
+
+#gameOver > p {
+    line-height: 1.5em;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    border: 1px solid #edcf72;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+p > .btn {
+    position: relative;
+    z-index: 1001;
+    padding: 0 15px 8px 15px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #9f8d77;
+}
+
+#gameOver > p > .btn {
+    position: relative;
+    top: 40px;
+    padding: 0 15px 8px 15px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #9f8d77;
+}
+
+#winner {
+    position: relative;
+    top: 20px;
+    left: 6px;
+    width: 200px;
+}
+
+#gameOver > p > span#close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+#gridPanel {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 370px;
+    height: 370px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#gridPanel > table#chessboard {
+    display: table-cell;
+    margin: auto;
+    padding: 20px;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #f9d65b;
+}
+
+#gridPanel > table#chessboard td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+#gridPanel > table#chessboard td > div {
+    position: relative;
+    top: 11px;
+    left: 18px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+table#pieces {
+    position: absolute;
+    z-index: 100;
+    top: 8px;
+    left: 5px;
+    border-spacing: 8px;
+}
+
+table#pieces td {
+    width: 11px;
+    height: 11px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+table#pieces td:hover {
+    border-color: red;
+}
+
+table#pieces td.black {
+    border-color: black;
+    background-color: black;
+}
+
+table#pieces td.white {
+    border-color: white;
+    background-color: white;
+}
